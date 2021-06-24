@@ -73,18 +73,36 @@ WSGI_APPLICATION = 'myproject.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
+#PythonAnywhere = False  # 设为False是为了本地支持
+PythonAnywhere = True  # 设为True是为了上线PythonAnywhere支持
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'advertise',
-        'USER': 'root',
-        'PASSWORD': 'DDX080735',
-        'HOST' : 'localhost',
-        'PORT': '3306'
-        
+if PythonAnywhere is False:
+    DEBUG = True
+    ALLOWED_HOSTS = []
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.mysql',
+            'NAME': 'XXXXX',
+            'USER': 'root',
+            'PASSWORD': '******',
+            'HOST': 'localhost',
+            'PORT': '3306',
+        }
     }
-}
+elif PythonAnywhere is True:
+    DEBUG = False
+    ALLOWED_HOSTS = ['username.pythonanywhere.com']
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.mysql',
+            'NAME': "username$advertise",
+            'USER': 'ddixiao666',
+            'PASSWORD': 'DDX080735',
+            'HOST': 'ddixiao666.mysql.pythonanywhere-services.com',
+        }
+    }
+
+
 
 
 # Password validation
