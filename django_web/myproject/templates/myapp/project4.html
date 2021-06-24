@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>预测并制定在6月15到7月14投放的策略</title>
+	<style>
+	body
+{
+	
+	background-color:#e0ffff;;
+}
+h3.normal {font-weight:normal;}
+h2.normal {font-weight:normal;}
+h4{background-color:#ffffff}
+li
+{
+	background-color:#6495ed;
+}
+#customers
+{
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	width:47%;
+	border-collapse:collapse;
+}
+
+#customers td, #customers th 
+{
+	font-size:1em;
+	border:1px solid #98bf21;
+	padding:3px 7px 2px 7px;
+}
+
+#customers th 
+{
+	font-size:1.1em;
+	text-align:left;
+	padding-top:5px;
+	padding-bottom:4px;
+	background-color:#A7C942;
+	color:#ffffff;
+}
+#customers tr.alt td 
+{
+	color:#000000;
+	background-color:#EAF2D3;
+}
+table,th,td
+{
+	border:1px solid black;
+}
+</style>
+</head>
+<body>
+	<h1 align = "center">预测并制定在6月15到7月14投放的策略</h1>
+	<br>
+	<hr>
+	<h2 class="normal">根据表中数据，制定六月十五日至七月十四日channel投放策略</h2>
+	<br>
+	<hr>
+	 渠道&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		广告网站
+	<br>	
+	{%for col in project4%}
+	<li>
+	{{col.type}} :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	{%if col.ad1 != 'null'%}
+	 	{{col.ad1}}&nbsp;&nbsp;&nbsp;&nbsp;
+	{%endif%}
+	{%if col.ad2 != 'null'%}
+	 	{{col.ad2}}&nbsp;&nbsp;&nbsp;&nbsp;
+	{%endif%}
+	{%if col.ad3 != 'null'%}
+	 	{{col.ad3}}&nbsp;&nbsp;&nbsp;&nbsp;
+	{%endif%}
+	{%if col.ad4 != 'null'%}
+	 	{{col.ad4}}&nbsp;&nbsp;&nbsp;&nbsp;
+{%endif%}
+	{%if col.ad5 != 'null'%}
+	 	{{col.ad5}}&nbsp;&nbsp;&nbsp;&nbsp;
+	{%endif%}
+
+	</li>
+	{%endfor%}
+	
+	<br>
+	<hr>
+
+<h3 class="normal">投放策略</h3>
+<table id="customers">
+<tr>
+<th>投放渠道</th>
+<th>投放的网站/th>
+</tr>
+	<tr class="alt">
+	<td>播放器播放标签 </td>
+	<td>品牌词产品 </td>
+	</tr>
+	<tr class="alt">
+	<td>WAP </td>
+	<td>百度</td>
+<h4>	</tr>
+<tr>
+<td>WAP</td>
+<td>搜狗</td>
+</tr>
+</h4>
+<tr class="alt">
+	<td>WAP</td>
+	<td>360 </td>
+	</tr>
+	<tr >
+	<td>15秒前贴片_pc </td>
+	<td>品牌词广告  </td>
+	</tr>
+	<tr class="alt">
+	<td>PC </td>
+	<td>百度</td>
+	</tr>
+	<tr >
+	<td>PC </td>
+	<td>多麦</td>
+	</tr>
+<tr class="alt">
+	<td>PC </td>
+	<td>谷歌</td>
+	</tr>
+	<tr >
+	<td>商城</td>
+	<td>准会员/td>
+	</tr>
+<tr class="alt">
+	<td>商城</td>
+	<td>会员/td>
+	</tr>
+<tr >
+	<td>商城</td>
+	<td>生态内/td>
+	</tr>
+	
+</table >
+</body>
+</html>

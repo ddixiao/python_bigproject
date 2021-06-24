@@ -1,0 +1,12 @@
+通过网页来将数据分析的四个结果显示出来
+
+如果你想要在本地打开网页，你需要在路径myprojec\myproject\settings.py 中找到名字是DATABASES的一个字典，
+在其中修改XXXXX，NAME是你用mysql创建的数据库的名字，PASSWORD是你的MySQL数据的密码
+
+首先在django_web\myproject\myapp\migrations文件夹里面删除0001_initial.py
+然后在命令行输入具体的路径打开  即输入cd XXXXX\django_web\myproject
+再输入python manage.py makemigrations
+再输入python manage.py migrate
+再输入python manage.py runserver 你就会得到一个本地的网址，将这个url复制并用浏览器打开，你就能看到页面
+
+if you can not speak Chinese,please copy that on google translation 

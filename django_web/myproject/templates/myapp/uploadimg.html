@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>上传图片</title>
+</head>
+<body text=“blue” style="background-repeat:no-repeat;
+      background-size:cover;background-color: #47C4ED; ">
+<h1 align="center">上传图片</h1>
+
+<hr>
+	<form method = "POST" class "form" enctype = "multipart/form-data">
+
+	{% csrf_token %}
+
+<p>点击选择文件可以上传选择要上传的文件</p>
+	<input type = 'file' name = 'img'>
+<hr>
+<p>点击选择文件按钮后再点击上传可以传到本地数据库mysql里</p>
+	<button type = "submit">上传</button>
+	</form>
+
+</body>
+</html>

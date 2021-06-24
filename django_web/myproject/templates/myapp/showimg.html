@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>查看已插入的图片</title>
+    {% load static %}
+</head>
+<body text=“blue” style="background-repeat:no-repeat;
+      background-size:cover;background-color: #47C4ED; ">
+<h1 align="center">已上传的图片展示</h1>
+<hr>
+        {% load static %}
+	{%for img1 in imgs %}
+	    <p style="margin:0 35%;">		
+	    <img src="{% static img1.img %}" width="420" height="320"> 
+	    </p>
+	    <hr>
+	{%endfor%}
+	<p>
+ 	<!--<img src="{% static 'img/2.jpg' %}"  width="500" height="400">-->
+	</p>
+</body>
+</html>

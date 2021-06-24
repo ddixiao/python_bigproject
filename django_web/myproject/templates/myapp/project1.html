@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
+    <title>访问量排名前二十的广告网站</title>
+    <style>
+body
+{
+	
+	background-color:#b0c4de;
+}
+h2.normal {font-weight:normal;}
+li {color:rgb(0,0,255);}
+
+h1 {letter-spacing:2px;}
+h3.normal {font-weight:normal;}
+</style>
+</head>
+<body>
+	<h1 align = "center">前二十的广告网站</h1>
+	<hr>
+	<h2 class="normal">依据访问量对site列进行排序，找出排名前二十的网站</h2>
+	<hr>
+        <ul>
+	{%for col in project1%}
+	<li class = “italic”>
+		{{col.pk}}-->{{col.type}}
+	</li>
+	{%endfor%}
+	</ul>
+	
+
+</body>
+</html>

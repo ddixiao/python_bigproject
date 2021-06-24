@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>广告分析</title>
+</head>
+<body background="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fgss0.baidu.com%2F-fo3dSag_xI4khGko9WTAnF6hhy%2Fzhidao%2Fpic%2Fitem%2F72f082025aafa40f55cf28c1ab64034f78f019a4.jpg&refer=http%3A%2F%2Fgss0.baidu.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1626365788&t=825a7e0bb6dbea4805e7f0d6bbd0ef01";
+background-repeat=no-repeat;>
+	<h1 align="center">广告分析并预测</h1>
+	<hr>	
+    <ul>
+        {%for col in name%}
+        <li>
+	    <font color="#dd00dd">
+	    <font size="3">
+            <a href = '{{col.pk}}'style = "color:red;">{{col.name}} </a>
+	    <br><br><br><br>
+        </li>
+        {%endfor%}
+    </ul>
+
+</body>
+</html>

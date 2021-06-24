@@ -1,0 +1,17 @@
+1.依据访问量对site列进行排序，找出排名前二十的网站。        
+2.统计不同source在5月15到5月31日的访问总量。需用柱形图展示。                                                        
+3.分别计算5月和6月不同来源的访问量并进行对比，并剔除media为空的数据。                                       
+4.根据表中数据，制定六月十五日至七月十四日channel投放策略（主要分析不同channel带来的浏览量）要简单说明策略制定的思路。 
+
+###重点，你需要在每个py文件中替换自己的csv数据集的具体路径
+      
+'''
+  1. Sort the site column according to the number of visits, and find the top 20 websites.
+
+  2. Count the total number of visits from different sources from May 15 to May 31. It needs to be shown in a column diagram.
+
+  3. Calculate and compare the visits from different sources in May and June, and eliminate the data with empty media.
+
+  4. According to the data in the table, to formulate the channel launch strategy from June 15 to July 14 (mainly analyzing the views brought by different channels), it is necessary to briefly explain the idea of strategy formulation.
+'''
+###The point is that you need to replace the specific path of your own CSV dataset in each py file

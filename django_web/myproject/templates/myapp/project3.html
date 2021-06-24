@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+
+</style>
+<head>
+    <meta charset="UTF-8">
+    <title>5月和6月的访问量对比</title>
+	<link rel="stylesheet" type="text/css" href="mystyle.css">
+	<style>
+body
+{
+	
+	background-color:#e0ffff;;
+}
+
+li
+{
+	background-color:#b0c4de;
+}
+p
+{
+	background-color:#6495ed;
+}
+h1 {letter-spacing:2px;}
+table,th,td
+{
+	border:1px solid black;
+}
+th
+{
+	background-color:green;
+	color:white;
+}
+h2.normal {font-weight:normal;}
+h3.normal {font-weight:normal;}
+
+</style>
+{% load static %}
+</head>
+<body>
+
+	<h1 align = "center">5月和6月的访问量对比</h1>
+	<br>
+	<hr>
+	<h2 class="normal">分别计算5月和6月不同来源的访问量并进行对比，并剔除media为空的数据</h2>
+	<br>
+	<hr>
+	<table id="customers">
+<tr>
+<th>访问量</th>
+<th>5月</th>
+<th>6月</th>
+</tr>
+	{%for col in project3%}
+	<tr class="alt">
+	<td>{{col.type}}</td>
+	<td>{{col.num1}}</td>
+	<td>{{col.num2}}</td>
+	</tr>
+	
+	{%endfor%}
+</table >
+	<hr>
+	<h3 class="normal">对比的曲线图片</h3>
+	<br>
+	<hr>
+	<p>
+	<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	
+	<img src="{% static 'img/QQ图片2_o1cbF2L_rkFuXyh.jpg' %}"  width="500" height="400" >
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<img src="{% static 'img/QQ图片4.png' %}"  width="500" height="400">
+	<br><br><br>
+	</p>
+</body>
+</html>

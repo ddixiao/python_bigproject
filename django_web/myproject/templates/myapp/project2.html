@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>5月15到5月31日的访问总量</title>
+	<link rel="stylesheet" type="text/css" href="mystyle.css">
+	<style>
+body
+{
+	
+	background-color:#e0ffff;;
+}
+
+li
+{
+	background-color:#b0c4de;
+}
+li
+{
+	background-color:#6495ed;
+}
+h1 {letter-spacing:2px;}
+h2.normal {font-weight:normal;}
+h3.normal {font-weight:normal;}
+</style>
+{% load static %}
+</head>
+<body>
+	<h1 align = "center">5月15到5月31日的访问总量</h1>
+	<br>
+	<hr>
+	<h2 class="normal">统计不同source在5月15到5月31日的访问总量</h2>
+	<br>
+	<hr>
+	{%for col in project2%}
+	<li>
+	{{col.type}}: &nbsp; &nbsp;{{col.num}}
+	</li>
+	{%endfor%}
+	<hr>
+	<h3 class="normal">柱形图</h3>
+	<br>
+	<hr>
+	<p>
+	<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	
+	<img src="{% static 'img/QQ图片1_f3Ff9cM_vCbBvIo.jpg' %}"  width="500" height="400" >
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<img src="{% static 'img/QQ图片3.png' %}"  width="500" height="400">
+	<br><br><br>
+	</p>
+</body>
+</html>
