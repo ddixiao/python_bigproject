@@ -91,7 +91,7 @@ if PythonAnywhere is False:
     }
 elif PythonAnywhere is True:
     DEBUG = False
-    ALLOWED_HOSTS = ['username.pythonanywhere.com']
+    ALLOWED_HOSTS = ['ddixiao666.pythonanywhere.com']
     DATABASES = {
         'default': {
             'ENGINE': 'django.db.backends.mysql',
