@@ -7,4 +7,5 @@ The other is Django page design
 '''此项目包含两个文件，
    一个是广告的数据分析加可视化
    另一个是django页面设计
+
 '''
