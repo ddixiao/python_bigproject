@@ -97,7 +97,7 @@ elif PythonAnywhere is True:
             'ENGINE': 'django.db.backends.mysql',
             'NAME': "username$advertise",
             'USER': 'ddixiao666',
-            'PASSWORD': 'DDX080735',
+            'PASSWORD': 'woaipython',
             'HOST': 'ddixiao666.mysql.pythonanywhere-services.com',
         }
     }
