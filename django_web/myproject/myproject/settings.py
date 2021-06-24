@@ -95,7 +95,7 @@ elif PythonAnywhere is True:
     DATABASES = {
         'default': {
             'ENGINE': 'django.db.backends.mysql',
-            'NAME': "username$advertise",
+            'NAME': "ddixiao666$advertise",
             'USER': 'ddixiao666',
             'PASSWORD': 'woaipython',
             'HOST': 'ddixiao666.mysql.pythonanywhere-services.com',
