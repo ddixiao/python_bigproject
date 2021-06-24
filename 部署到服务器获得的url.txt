@@ -6,3 +6,6 @@
 http://ddixiao666.pythonanywhere.com/
 
 如果想要看全部的网页页面，请下载压缩包（django网页最终图片），打开里面的word文件浏览
+
+如果下载页面打不开，将打不开的网址复制后，打开这个网址https://d.serctl.com/，将打不开的下载页面复制后即可
+下载浏览全部页面
